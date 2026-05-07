@@ -1,0 +1,18 @@
+[tasks.init]
+description = "Initialize the environment"
+run = "terraform init -upgrade"
+
+[tasks.provision]
+description = "Provision github settings"
+run = """
+source mise.sh
+terraform apply
+"""
+
+[tasks.format]
+description = "Format all files"
+run = "terraform fmt -recursive"
+
+[tasks.lint]
+description = "Lint all files"
+run = "terraform validate"
