@@ -153,6 +153,10 @@ github_repositories = {
     description = "Simple API to convert a picture of a receipt to a structured response"
     topics      = ["python", "jupyter", "actions", "docker", "flask", "pytesseract"]
   }
+  "request-info" = {
+    description = "GitHub Action that comments on issues and pull requests when they use the default title or body, requesting more info"
+    topics      = ["github-actions", "typescript", "node", "issues", "pull-requests", "actions"]
+  }
   "rust-basics" = {
     description = "Syntax basics for the rust programming language"
     topics      = ["rust", "rls", "syntax", "vscode", "actions"]
