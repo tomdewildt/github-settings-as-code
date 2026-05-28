@@ -55,12 +55,16 @@ variable "github_issue_labels" {
     description = optional(string)
   }))
   default = {
+    "dependencies" = {
+      color       = "0052cc"
+      description = "Dependency updates"
+    }
     "bug" = {
-      color       = "d73a4a"
+      color       = "b60205"
       description = "Something isn't working"
     }
     "documentation" = {
-      color       = "0075ca"
+      color       = "1d76db"
       description = "Improvements or additions to documentation"
     }
     "duplicate" = {
@@ -68,11 +72,11 @@ variable "github_issue_labels" {
       description = "This issue or pull request already exists"
     }
     "enhancement" = {
-      color       = "a2eeef"
+      color       = "0e8a16"
       description = "New feature or request"
     }
     "help-wanted" = {
-      color       = "008672"
+      color       = "d93f0b"
       description = "Extra attention is needed"
     }
     "inactive" = {
@@ -80,23 +84,23 @@ variable "github_issue_labels" {
       description = "Hasn't had activity in 60 days"
     }
     "invalid" = {
-      color       = "e4e669"
+      color       = "b60205"
       description = "This doesn't seem right"
     }
     "need-more-info" = {
-      color       = "d876e3"
+      color       = "5319e7"
       description = "Further information is requested"
     }
     "pinned" = {
-      color       = "f9348a"
+      color       = "fbca04"
       description = "Will not be marked with the inactive label"
     }
     "question" = {
-      color       = "d4c5f9"
+      color       = "006b75"
       description = "A question or general inquiry"
     }
     "wontfix" = {
-      color       = "ffffff"
+      color       = "cfd3d7"
       description = "This will not be worked on"
     }
   }
