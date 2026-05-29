@@ -21,6 +21,11 @@ variable "github_repositories" {
     squash_merge_commit_title   = optional(string, "COMMIT_OR_PR_TITLE")
     squash_merge_commit_message = optional(string, "COMMIT_MESSAGES")
     delete_branch_on_merge      = optional(bool, true)
+
+    enable_dependabot_security_updates = optional(bool, true)
+    enable_secret_scanning             = optional(bool, true)
+    enable_secret_push_protection      = optional(bool, true)
+    enable_vulnerability_alerts        = optional(bool, true)
   }))
 
   validation {

@@ -20,6 +20,18 @@ resource "github_repository" "repository" {
 
   delete_branch_on_merge = each.value.delete_branch_on_merge
 
+  dynamic "security_and_analysis" {
+    for_each = each.value.visibility == "public" ? [1] : []
+    content {
+      secret_scanning {
+        status = each.value.enable_secret_scanning ? "enabled" : "disabled"
+      }
+      secret_scanning_push_protection {
+        status = each.value.enable_secret_push_protection ? "enabled" : "disabled"
+      }
+    }
+  }
+
   lifecycle {
     ignore_changes = [template]
   }
@@ -46,6 +58,27 @@ resource "github_branch_protection" "branch_protection" {
   lifecycle {
     ignore_changes = [required_status_checks[0].contexts]
   }
+}
+
+resource "github_repository_vulnerability_alerts" "vulnerability_alerts" {
+  for_each = {
+    for name, repo in var.github_repositories : name => repo
+    if repo.enable_vulnerability_alerts
+  }
+
+  repository = github_repository.repository[each.key].name
+}
+
+resource "github_repository_dependabot_security_updates" "dependabot_security_updates" {
+  for_each = {
+    for name, repo in var.github_repositories : name => repo
+    if repo.enable_vulnerability_alerts && repo.enable_dependabot_security_updates
+  }
+
+  repository = github_repository.repository[each.key].name
+  enabled    = true
+
+  depends_on = [github_repository_vulnerability_alerts.vulnerability_alerts]
 }
 
 resource "github_issue_labels" "issue_labels" {
