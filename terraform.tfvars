@@ -65,6 +65,10 @@ github_repositories = {
     description = "Custom signatures for my emails"
     topics      = ["css", "html", "javascript", "email", "live-server"]
   }
+  "first-interaction" = {
+    description = "GitHub Action that welcomes new contributors when they open their first pull request or issue"
+    topics      = ["github-actions", "typescript", "node", "welcome", "first-contribution", "actions"]
+  }
   # "foundations-of-databases" = {
   #   description = "Code for The Foundations of Databases course of my master's degree"
   #   topics      = ["sql", "psql", "docker", "postgres", "makefile"]
