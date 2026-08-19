@@ -137,6 +137,10 @@ github_repositories = {
   #   description = "Code for The Natural Language Processing course of my master's degree"
   #   topics      = ["gensim", "jupyter", "matplotlib", "nltk", "numpy", "pandas", "python", "scikit-learn", "spacy", "fuzzytm"]
   # }
+  "open-telemetry-experiment" = {
+    description = "Experiment with OpenTelemetry for distributed tracing, metrics and logs"
+    topics      = ["opentelemetry", "observability", "tracing", "metrics", "nextjs", "python", "postgres", "redis", "actions"]
+  }
   "parcel-site-template" = {
     description = "Simple starter template for building Parcel sites with Sass and Javascript"
     topics      = ["parcel", "html", "sass", "javascript", "actions"]
