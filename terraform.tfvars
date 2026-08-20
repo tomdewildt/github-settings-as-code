@@ -169,6 +169,10 @@ github_repositories = {
     description = "Syntax basics for the rust programming language"
     topics      = ["rust", "rls", "syntax", "vscode", "actions"]
   }
+  "samsung-gear-360-ndi-stream" = {
+    description = "Rust desktop app that streams a Samsung Gear 360 camera stream over NDI"
+    topics      = ["rust", "ndi", "samsung-gear-360", "reverse-engineering", "camera", "streaming", "actions"]
+  }
   # "social-network-analysis-for-data-scientists" = {
   #   description = "Code for The Social Network Analysis For Data Scientists course of my master's degree"
   #   topics      = ["r", "makefile", "actions", "renv", "sna", "igraph", "sna4ds"]
