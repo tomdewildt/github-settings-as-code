@@ -141,6 +141,14 @@ github_repositories = {
     description = "Experiment with OpenTelemetry for distributed tracing, metrics and logs"
     topics      = ["opentelemetry", "observability", "tracing", "metrics", "nextjs", "python", "postgres", "redis", "actions"]
   }
+  "opencode-sidebar-context" = {
+    description = "OpenCode plugin that shows context usage, cache hit rate and cost in the sidebar"
+    topics      = ["opencode", "opencode-plugin", "typescript", "bun", "solidjs", "opentui", "actions"]
+  }
+  "opencode-sidebar-usage" = {
+    description = "OpenCode plugin that shows Anthropic, GitHub Copilot and OpenAI usage limits in the sidebar"
+    topics      = ["opencode", "opencode-plugin", "typescript", "bun", "solidjs", "opentui", "anthropic", "github-copilot", "openai", "actions"]
+  }
   "parcel-site-template" = {
     description = "Simple starter template for building Parcel sites with Sass and Javascript"
     topics      = ["parcel", "html", "sass", "javascript", "actions"]
