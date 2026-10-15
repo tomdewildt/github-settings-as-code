@@ -141,6 +141,10 @@ github_repositories = {
     description = "Experiment with OpenTelemetry for distributed tracing, metrics and logs"
     topics      = ["opentelemetry", "observability", "tracing", "metrics", "nextjs", "python", "postgres", "redis", "actions"]
   }
+  "opencode-lsp" = {
+    description = "OpenCode plugin that adds language server diagnostics and code navigation"
+    topics      = ["opencode", "opencode-plugin", "typescript", "bun", "lsp", "language-server", "actions"]
+  }
   "opencode-sidebar-context" = {
     description = "OpenCode plugin that shows context usage, cache hit rate and cost in the sidebar"
     topics      = ["opencode", "opencode-plugin", "typescript", "bun", "solidjs", "opentui", "actions"]
