@@ -11,6 +11,11 @@ variable "github_repositories" {
     topics      = optional(list(string), [])
     visibility  = optional(string, "public")
 
+    fork = optional(object({
+      owner      = string,
+      repository = string
+    }))
+
     enable_issues               = optional(bool, true)
     enable_projects             = optional(bool, false)
     enable_wiki                 = optional(bool, false)

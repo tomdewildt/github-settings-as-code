@@ -7,6 +7,10 @@ resource "github_repository" "repository" {
   topics       = each.value.topics
   visibility   = each.value.visibility
 
+  fork         = each.value.fork != null ? true : null
+  source_owner = try(each.value.fork.owner, null)
+  source_repo  = try(each.value.fork.repository, null)
+
   has_issues   = each.value.enable_issues
   has_projects = each.value.enable_projects
   has_wiki     = each.value.enable_wiki
@@ -40,7 +44,7 @@ resource "github_repository" "repository" {
 resource "github_branch_protection" "branch_protection" {
   for_each = {
     for name, repo in var.github_repositories : name => repo
-    if repo.visibility == "public"
+    if repo.visibility == "public" && repo.fork == null
   }
 
   repository_id  = github_repository.repository[each.key].node_id

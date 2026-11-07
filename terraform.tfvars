@@ -141,6 +141,19 @@ github_repositories = {
     description = "Experiment with OpenTelemetry for distributed tracing, metrics and logs"
     topics      = ["opentelemetry", "observability", "tracing", "metrics", "nextjs", "python", "postgres", "redis", "actions"]
   }
+  "opencode-anthropic-auth" = {
+    description = "Fork of ex-machina-co/opencode-anthropic-auth with the request body limit raised to 32 MiB"
+    topics      = ["opencode", "plugin", "anthropic", "oauth", "fork"]
+    fork = {
+      owner      = "ex-machina-co"
+      repository = "opencode-anthropic-auth"
+    }
+    enable_issues                      = false
+    enable_dependabot_security_updates = false
+    enable_secret_scanning             = false
+    enable_secret_push_protection      = false
+    enable_vulnerability_alerts        = false
+  }
   "opencode-lsp" = {
     description = "OpenCode plugin that adds language server diagnostics and code navigation"
     topics      = ["opencode", "opencode-plugin", "typescript", "bun", "lsp", "language-server", "actions"]

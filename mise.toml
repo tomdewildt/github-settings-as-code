@@ -5,7 +5,7 @@ run = "terraform init -upgrade"
 [tasks.provision]
 description = "Provision github settings"
 run = """
-source mise.sh
+. ./mise.sh
 terraform apply
 """
 
