@@ -77,6 +77,10 @@ github_repositories = {
     description = "Simple starter template for building Gatsby sites with Markdown and Styled Components"
     topics      = ["javascript", "gatsby", "react", "markdown", "styled-components", "actions"]
   }
+  "gdrive-to-docmost-converter" = {
+    description = "Convert Google Docs from Google Drive to Docmost pages, including images and nested folders"
+    topics      = ["python", "uv", "google-drive", "google-docs", "docmost", "docker", "terraform", "gcp", "actions"]
+  }
   "github-actions-experiment" = {
     description = "Experiments with GitHub Actions workflows"
     topics      = ["github-actions", "ci-cd", "actions"]
