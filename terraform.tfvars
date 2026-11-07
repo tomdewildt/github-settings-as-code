@@ -61,6 +61,10 @@ github_repositories = {
   #   description = "Code for The Data Mining course of my master's degree"
   #   topics      = ["python", "jupyter", "numpy", "scikit-learn", "pandas", "matplotlib"]
   # }
+  "docmost-to-claude-project-converter" = {
+    description = "Pull, push and sync Docmost pages and their subpages with documents in a Claude project"
+    topics      = ["python", "uv", "docmost", "claude", "anthropic", "sync", "actions"]
+  }
   "email-signature" = {
     description = "Custom signatures for my emails"
     topics      = ["css", "html", "javascript", "email", "live-server"]
